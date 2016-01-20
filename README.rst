@@ -1,4 +1,7 @@
 
+.. image:: https://circleci.com/gh/InsightSoftwareConsortium/SimpleITKTutorialSPIE2016.svg?style=svg
+    :target: https://circleci.com/gh/InsightSoftwareConsortium/SimpleITKTutorialSPIE2016
+
 SPIE 2016: ITK in Biomedical Research and Commercial Applications - Jupyter Notebooks
 =====================================================================================
 
