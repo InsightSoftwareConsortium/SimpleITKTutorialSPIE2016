@@ -1,5 +1,3 @@
-language: cpp
-
 sudo: required
 
 services:
@@ -9,6 +7,6 @@ before_install:
 - docker pull insighttoolkit/simpleitk-notebooks:2015-miccai
 
 script:
-- cd ~/SimpleITKTutorialSPIE2016 && python ./downloaddata.py ./Data ./Data/manifest.json
-- docker run -v ~/SimpleITKTutorialSPIE2016:/home/jovyan/notebooks insighttoolkit/simpleitk-notebooks:2015-miccai ./test.sh
+- python ./downloaddata.py ./Data ./Data/manifest.json
+- docker run -v $PWD:/home/jovyan/notebooks insighttoolkit/simpleitk-notebooks:2015-miccai ./test.sh
 
