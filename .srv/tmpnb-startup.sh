@@ -1,6 +1,6 @@
 #!/bin/sh
 
-IMAGE_NAME=insighttoolkit/simpleitk-notebooks:2015-miccai
+IMAGE_NAME=insighttoolkit/simpleitk-notebooks:2016-spie
 
 # Sets up Docker on Debian 8 Jessie.
 echo 'deb http://http.debian.net/debian jessie-backports main' >> /etc/apt/sources.list
