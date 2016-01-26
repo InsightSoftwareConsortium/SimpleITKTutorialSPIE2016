@@ -1,3 +1,4 @@
 .ipynb_checkpoints
 Data
 2016-SPIE-MI-ITK-Course-Notebooks.tar
+*.pyc
