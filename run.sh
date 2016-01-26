@@ -5,6 +5,7 @@ image=insighttoolkit/simpleitk-notebooks:2016-spie
 image_archive=2016-SPIE-MI-ITK-Course-Notebooks.tar
 port=8888
 extra_run_args=""
+develop=""
 quiet=""
 
 show_help() {
@@ -28,6 +29,7 @@ Options:
   -p             Port to expose the notebook server (default ${port}). If an empty
                  string, the port is not exposed.
   -r             Extra arguments to pass to 'docker run'.
+  -d             Mount the local repository directory for Notebook development. Requires Linux or Mac OSX.
   -q             Do not output informational messages.
 EOF
 }
@@ -53,6 +55,9 @@ while [ $# -gt 0 ]; do
 		-r)
 			extra_run_args="$extra_run_args $2"
 			shift
+			;;
+		-d)
+			develop=1
 			;;
 		-q)
 			quiet=1
@@ -126,7 +131,11 @@ fi
 pwd_dir="$(pwd)"
 mount_local=""
 if [ "${os}" = "Linux" ] || [ "${os}" = "Darwin" ]; then
-	mount_local=" -v ${pwd_dir}:/home/jovyan/work "
+	if [ -n "$develop" ]; then
+		mount_local=" -v ${pwd_dir}:/home/jovyan/notebooks "
+	else
+		mount_local=" -v ${pwd_dir}:/home/jovyan/work "
+	fi
 fi
 port_arg=""
 if [ -n "$port" ]; then
