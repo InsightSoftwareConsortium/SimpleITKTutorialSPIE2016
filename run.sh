@@ -20,9 +20,9 @@ fi
 _IP=$(docker-machine ip ${_VM} 2> /dev/null || echo "localhost" )
 _URL="http://${_IP}:8888"
 
-_RUNNING=$(docker ps -q --filter "name=2015-miccai")
+_RUNNING=$(docker ps -q --filter "name=2016-spie")
 if [ -n "$_RUNNING" ]; then
-	docker stop 2015-miccai
+	docker stop 2016-spie
 fi
 
 echo ""
@@ -40,9 +40,9 @@ if [ "${_OS}" = "Linux" ] || [ "${_OS}" = "Darwin" ]; then
 fi
 docker run \
   --rm \
-  --name 2015-miccai \
+  --name 2016-spie \
   ${_MOUNT_LOCAL} \
   -p 8888:8888 \
-  insighttoolkit/simpleitk-notebooks:2015-miccai &> /dev/null
+  insighttoolkit/simpleitk-notebooks:2016-spie &> /dev/null
 
 # vim: noexpandtab shiftwidth=4 tabstop=4 softtabstop=0
