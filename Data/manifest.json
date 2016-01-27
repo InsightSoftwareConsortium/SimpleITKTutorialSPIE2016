@@ -2,6 +2,18 @@
  "cthead1.png": {
   "md5sum": "0641790321a36d63bd735ad27d9caca1"
  },
+ "ITKv4RegistrationComponentsDiagram.svg": {
+   "md5sum" : "fa9c2b40248d206c54ca4964f8fca1b4"
+ },
+ "RIRE/training_001_ct.mha" : {
+  "md5sum" : "51174490e46fd227b7ae0b83d8e9a143"
+ },
+ "RIRE/training_001_mr_T1.mha" : {
+  "md5sum" : "04e76cef57966ac99ad4cee3b787b158"
+ },
+ "RIRE/ct_T1.standard" : {
+ "md5sum" : "91b694af442eaa854be808997c8f0f4b"
+ },
   "JupyterLogo.svg": {
     "md5sum": "13e8ebca307d02e996f676ecaabdffb2"
   },
