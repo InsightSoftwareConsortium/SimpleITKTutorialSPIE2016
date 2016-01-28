@@ -14,6 +14,12 @@
  "RIRE/ct_T1.standard" : {
  "md5sum" : "91b694af442eaa854be808997c8f0f4b"
  },
+ "nac-hncma-atlas2013-Slicer4Version/Data/A1_grayT1.nrrd": {
+  "md5sum": "84e9629e61f0fde86e6c7044524ad9b9"
+ },
+ "nac-hncma-atlas2013-Slicer4Version/Data/A1_grayT2.nrrd": {
+  "md5sum": "e9e19286a7abe36099a1f322a5dc378c"
+ },
   "JupyterLogo.svg": {
     "md5sum": "13e8ebca307d02e996f676ecaabdffb2"
   },
