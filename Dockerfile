@@ -1,4 +1,4 @@
-FROM insighttoolkit/simpleitk-notebooks:961236c447dd
+FROM insighttoolkit/simpleitk-notebooks:latest
 MAINTAINER Insight Software Consortium <community@itk.org>
 
 ADD README.rst ./
