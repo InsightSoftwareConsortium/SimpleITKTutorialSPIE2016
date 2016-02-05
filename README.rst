@@ -25,4 +25,4 @@ Organizers
 About
 -----
 
-This is a collection of Jupter Notebooks to be used as instructional material.
+This is a collection of Jupyter Notebooks to be used as instructional material.
