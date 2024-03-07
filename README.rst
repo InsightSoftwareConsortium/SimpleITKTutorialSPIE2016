@@ -1,3 +1,6 @@
+.. warning:: This repository has been archived. For up to date information, please see the 
+ `SimpleITK tutorial <https://simpleitk.org/TUTORIAL/>`_
+ or the `SimpleITK notebooks repository <https://github.com/InsightSoftwareConsortium/SimpleITK-Notebooks>`_.
 
 .. image:: https://circleci.com/gh/InsightSoftwareConsortium/SimpleITKTutorialSPIE2016.svg?style=svg
     :target: https://circleci.com/gh/InsightSoftwareConsortium/SimpleITKTutorialSPIE2016
